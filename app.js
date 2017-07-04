@@ -9,7 +9,9 @@ var express     = require('express'),
     flash       = require('connect-flash');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/yelpcamp');
+// mongoose.connect('mongodb://localhost/yelpcamp');
+mongoose.connect('mongodb://daniel:1234@ds149412.mlab.com:49412/yelpcamp');
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'))
