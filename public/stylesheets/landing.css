@@ -13,6 +13,11 @@ body {
     color: #fff;
 }
 
+#landing-header a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
 .slideshow { 
     position: fixed;
     width: 100%;
