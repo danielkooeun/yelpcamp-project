@@ -9,7 +9,7 @@ var express     = require('express'),
     flash       = require('connect-flash');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect(process.env.DATABASEURL);      // mongodb://localhost/yelpcamp
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
